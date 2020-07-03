@@ -27,9 +27,15 @@
     <ClInclude Include="src\Aitomus\Entrypoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Aitomus\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Aitomus\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Aitomus\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

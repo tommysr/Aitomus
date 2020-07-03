@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Aitomus\Log.h" />
     <ClInclude Include="src\Aitomus.h" />
     <ClInclude Include="src\Aitomus\Application.h" />
     <ClInclude Include="src\Aitomus\Core.h" />
     <ClInclude Include="src\Aitomus\Entrypoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Aitomus\Log.cpp" />
     <ClCompile Include="src\Aitomus\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -68,6 +70,7 @@
       <PreprocessorDefinitions>AIT_PLATFORM_WINDOWS; AIT_BUILD_DLL;WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Aitomus\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -83,6 +86,7 @@
       <PreprocessorDefinitions>AIT_PLATFORM_WINDOWS; AIT_BUILD_DLL;WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Aitomus\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

@@ -1,0 +1,3 @@
+[submodule "Aitomus/vendor/spdlog"]
+	path = Aitomus/vendor/spdlog
+	url = https://github.com/gabime/spdlog
