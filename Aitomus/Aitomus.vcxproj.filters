@@ -4,6 +4,9 @@
     <Filter Include="Aitomus">
       <UniqueIdentifier>{278CA88C-936B-2728-9C83-B2FE08E28D89}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Aitomus\Events">
+      <UniqueIdentifier>{2B269089-17F4-838F-0088-F4B5ECF45FF4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Aitomus.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Aitomus\Entrypoint.h">
       <Filter>Aitomus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Aitomus\Events\ApplicationEvent.h">
+      <Filter>Aitomus\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Aitomus\Events\Event.h">
+      <Filter>Aitomus\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Aitomus\Events\KeyEvent.h">
+      <Filter>Aitomus\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Aitomus\Events\MouseEvent.h">
+      <Filter>Aitomus\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Aitomus\Log.h">
       <Filter>Aitomus</Filter>
