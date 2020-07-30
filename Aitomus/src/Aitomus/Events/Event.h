@@ -1,9 +1,8 @@
 #pragma once
 
+#include "aitpch.h"
 #include "Aitomus/Core.h"
 
-#include <string>
-#include <functional>
 
 namespace Aitomus {
 

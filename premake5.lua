@@ -10,6 +10,11 @@ workspace "Aitomus"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Aitomus/vendor/GLFW/include"
+
+include "Aitomus/vendor/GLFW"
+
 project "Aitomus"
 	location "Aitomus"
 	kind "SharedLib"
@@ -17,6 +22,9 @@ project "Aitomus"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	pchheader "aitpch.h"
+	pchsource "Aitomus/src/aitpch.cpp"
 
 	files
 	{
@@ -27,7 +35,14 @@ project "Aitomus"
 	includedirs
 	{
 	    "%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

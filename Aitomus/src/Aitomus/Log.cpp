@@ -1,3 +1,4 @@
+#include "aitpch.h"
 #include "Log.h"
 
 namespace Aitomus {
